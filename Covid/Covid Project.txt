@@ -1,0 +1,4 @@
+As the number of confirmed COVID-19 cases continues to rise, virtual Management system has become critical. 
+        We understand this battle is not easy and we fully support our healthcare heroes. 
+        Our COVID-19 Management system supports Create, Read, Update and Delete of every Individual Citizen's Vaccination Details. 
+        Most importantly providing a safer environment without physically keeping the records of every citizen.

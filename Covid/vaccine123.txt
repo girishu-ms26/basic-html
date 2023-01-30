@@ -1,0 +1,23 @@
+vaccine
+mphasis123
+
+CREATE TABLE vaccine
+	(
+		aadhar VARCHAR(12) PRIMARY KEY,
+		cname VARCHAR2(20) NOT NULL,
+		age NUMBER(3) CHECK (age>=18),
+		gender CHAR NOT NULL,
+		phno NUMBER(10) NOT NULL CHECK(phno<9999999999),
+		email VARCHAR(30),
+		status NUMBER(1) CHECK (status<=2),
+		vtype VARCHAR2(20)
+	);
+
+INSERT INTO vaccine values (424052135537,'NEHA ASWALE',22,'f',9021574046,'nehadeshmukh213@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (892878059808,'GIRISHU M S',22,'m',9035451302,'girishums1999@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (969591286025,'MANDA AKHILA',22,'f',7095268622,'mandaakhila448@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (358687664696,'PRASHANT SHINDE',23,'m',8097403570,'pppshinde1998@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (507201633605,'MEERA PATIL',23,'f',9096162119,'meghapatil98.mp@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (487690449271,'DIVYA SURYAWANSHI',22,'f',8805751865,'divyasuryawanshi1998@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (370488014452,'GANESH DOKE',22,'m',7709952688,'ganeshdoke1999@gmail.com',2,'covishield');
+INSERT INTO vaccine VALUES (270496442895,'SAURABH KESARKAR',22,'m','8698170970','saurabhkesarkar1998@gmail.com',2,'covishield');

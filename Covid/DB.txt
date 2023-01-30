@@ -1,0 +1,22 @@
+CREATE TABLE user_reg
+	(
+		phno NUMBER(10) check (phno>999999999) PRIMARY KEY,
+		aadhar VARCHAR2(12)		
+	);
+CREATE TABLE Citizen
+	(	
+		aadhar VARCHAR2(12) PRIMARY KEY,
+		fname VARCHAR2(20),
+		lname VARCHAR2(20),
+		age NUMBER(3) CHECK (age>=18),
+		email VARCHAR2(30),
+		gender CHAR,
+		phno NUMBER (4) REFERENCES user_reg(phno)
+	);
+CREATE TABLE vaccine
+	(	
+		aadhar VARCHAR2(12) REFERENCES Citizen(aadhar),
+		vname VARCHAR2(20),
+		doseno NUMBER(1) CHECK (doseno<=2)
+	);
+
